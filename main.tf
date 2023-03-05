@@ -30,6 +30,8 @@ resource "aws_instance" "blog" {
 
 resource "aws_security_group" "blog" {
   name = "blog"
+  description="All in"
+  
   tags = {
     Terraform = "true"
   }
